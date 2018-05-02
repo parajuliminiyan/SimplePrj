@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="image/favicon.svg">
+    <!-- Bootstrap core CSS -->
+    <link href="log/css/bootstrap.min.css" rel="stylesheet">
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 10px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=Number], select {
+    width: 100%;
+    padding: 10px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #2fcbce;
+    color: white;
+    padding: 18px 22px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}s
+</style>
+<body>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-1"></div>
+
+<div class="col-md-6">
+<h4>Create a <b>Post</b>:</h4>
+  <form action="/action_page.php">
+    <label for="location">Location:</label>
+    <input type="text" id="location" name="location" placeholder="Central-Location(Kathmandu)">
+
+     <label for="location">Description:</label>
+    <input type="text" id="description" name="description" placeholder="Provide exact location (Bhaktapur) and basic description about home">
+
+    <label for="Type">Type:</label>
+    <select id="Type" name="Type">
+      <option value="Room">Room</option>
+      <option value="Flat">Flat</option>
+      <option value="home">Home</option>
+    </select>
+
+    <label for="Price">Price</label>
+    <input type="Number" id="Number" name="Number" placeholder="Please enter the rent for Room/Flat"><br>
+
+    <label for="Contact">Contact Number:</label>
+    <input type="text" id="Contact" name="Contact" placeholder="Enter a valid No. to contact you.">
+  
+  <p>Upload images:<br>
+<input type="file" name="Image" multiple="multiple">
+<h6>Try selecting multiple images at once</h6>
+<!--<input type="submit" name="submit" value="submit"><br>-->
+</p>
+    <input type="submit" value="Submit">
+    <p>If you are unaware on how to post read here :<a href="help1.html"> Click me </a></p>
+  </form>
+</div>
+<div class="col-md-5"></div>
+
+</body>
+</html>

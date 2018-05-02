@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="log/popcss.css">
+<link rel="stylesheet" type="text/css" href="log/profile.css">
+<link rel="stylesheet" type="text/css" href="log/index.css">
+
+<head>
+
+  <h3>Hamrokotha.com</h3>
+
+</head>
+
+<body>  
+<!--<img class="mb-4" src="image/Hamrokoth.png" alt="" width="78" height="75">-->
+<div class="topnav">
+  <ul class="nav navbar-nav navbar-right">
+      <a class="active" href="#Home">Home</a>
+      <a href="post.html">Post</a>
+      <a href="help.html">Help</a>
+      <a type="button" href="#" onclick="document.getElementById('login-wrapper').style.display='block'"">Login</a>
+
+<!-- Profile ma hover garda aaune dropdown-->
+<div class="dropdown">
+<a type="button" href="#">Profile</a>
+  <div class="dropdown-content">
+    <div class="w3-display-right w3-display-hover">
+      <table class="table"">
+        <tr>
+          <td>
+            <img src="image/pp.png" alt="" width="60" height="60">
+          </td> 
+          <td>
+            <ul style="list-style-type:circle">
+              <a href="changepass.html"> <li>Change Password</li></a>
+              <a href="#"> <li> Logout</li></div></a>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-address-book"></i> Username<br>&#9743 98xxxxxxxx
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="flip">
+<input type="text" placeholder="Enter Location or price" name="search">
+  <div class="panel">Enter Location or price!!!</div>
+  <button type="submit"><i class="fa fa-search"></i></button>
+  </ul>
+   </div>
+</div>
+<!-- Login box ko pop up -->
+<div id="login-wrapper" class="login">
+  <form class="login-content animate" action="/action_page.php">    
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('login-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+        <img src="image/3.svg" alt="Avatar" class="avatar">
+    </div>
+    <div class="boxa">
+      <input type="text" placeholder="Enter Username" name="uname">
+        <input type="password" placeholder="Enter Password" name="psw">        
+          <button type="submit">Login</button>
+            <div style="margin:10px 10px; padding-left: 130px;">Don't have an account <a href="signup.html">Sign up</a></div>
+              <input type="checkbox" style="margin:26px 30px;"> Remember me      
+                <a href="forgotpass.html" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+  </form>  
+</div>
+
+<!-- Login box ko pop up ko script -->
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+var login = document.getElementById('login-wrapper');
+window.onclick = function(event) {
+    if (event.target == login) {
+        login.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
+<!--
+<form action="/action_page.php">///// after search container class

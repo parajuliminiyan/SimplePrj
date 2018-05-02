@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="log/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f9f9f9;
+   background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 85px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+    </style>
+  </head>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-3"> </div>
+
+      <div class="col-md-6">
+
+      <body class="text-center">
+      <form class="form-signin">
+ 
+      <h1 style="color:Tomato;" class="h3 mb-3 font-weight-normal">Change Your Password</h1>
+      <p> It's good idea to keep your storng password</p>
+      
+      <label for="inputPassword" class="sr-only">Current Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Current Password" required>
+
+      <label for="inputPassword" class="sr-only">New Password</label>
+      <input type="password" id="inputPassword" class="form-control" minlenght ="6" maxlength="30" placeholder="New Password" required>
+
+      <label for="inputPassword" class="sr-only">Re-enter New Password</label>
+      <input type="password" id="inputPassword" class="form-control" minlenght ="6" maxlength="30" placeholder="Re-enter New Password" required>
+
+      <div class="checkbox mb-3">
+        <a href="forgotpass.html" style="text-decoration:none;  margin-right:20px; margin-top:10px;">Forgot Password ?</a>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Save changes</button>
+      </form>
+      <div class="col-md-3"> </div>
+    </div>
+    </div>
+  </body>
+</html>
